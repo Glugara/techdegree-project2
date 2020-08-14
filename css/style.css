@@ -1,52 +1,108 @@
 
 * {
+box-sizing: border-box;}
+body {
   margin: 0;
-  padding: 0;
 }
-
 img {
   max-width: 100%;
-  max-height: auto;
 }
-
 h2 {
   text-align: center;
   padding: 10px;
 }
-
 h3 {
   text-align: center;
   padding: 10px;
 }
-
 p {
   text-align: center;
   padding: 10px;
 }
-
-/*  Padding & Backgrounds  */
-.header {
-  padding: 10px;
-  background-color: lightgrey;
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+a {
+  color: black;
+  font-weight: bold;
+  font-family: 'Roboto';
+  text-decoration: none;
+}
+a:hover {
+  color: yellow;
+  text-decoration: none;
 }
 
+/*  Classes  */
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+.header {
+  padding: 30px 10px 30px 10px;
+  background-color: lightgrey;
+}
+.name {
+  text-align: center;
+}
 .main-nav {
   padding: 10px;
 }
-
+.navbar li {
+  display: block;
+  padding: 5px;
+  margin: 5px;
+  background-color: white;
+  text-align: center;
+}
 .profile {
   padding: 10px;
   text-align:center;
 }
-
 .box {
   padding: 10px;
 }
-
 .footer {
   padding: 10px;
   background-color: lightgrey;
 }
+.btp {
+  border-top: 1px solid rgb(169 164 164);
+  margin-top: 35px;
+  padding-top: 20px;
+}
+.btpname {
+  display: inline;
+  padding-right: 25%;
+}
+.bttpmob {
+  display: inline;
+  color: rgb(75, 75, 75);
+  font-weight: bold;
+  text-align: right;
+}
+.coll {
+  display: block;
+  margin: 20px 10px 20px 10px;
+  max-width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+  padding-top: 5px;
+}
+.colr {
+  display: block;
+  margin: 20px 10px 20px 10px;
+  max-width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+  padding-top: 5px;
+}
+.navbarbtm {
+  visibility: hidden;
+}
+
 /*  Clearfix  */
 .clearfix::after {
   content: "";
@@ -60,23 +116,55 @@ p {
   .profile-pic {
     float: right;
     width: 40%;
-    padding: 0 0 40px 0
+    padding: 0 0 40px 15px;
   }
-  .body {
-    display:
+  .navbar {
+    text-align: center;
   }
-  .box {
+  .navbar li {
+    display: inline;
+    padding: 5px;
+    margin: 5px;
+    background-color: lightgrey;
   }
   .name {
     text-align: center;
   }
-  .contentl {
+  .coll {
     float: left;
-    width: 45%;
+    margin: 20px 0px 20px 20px;
+    width: calc(50% - 20px);
+    margin-bottom: 0;
   }
-  .contentr {
-    float: right;
-    width: 45%;
+  .colr {
+    float: left;
+    margin: 20px 10px 20px 0px;
+    width: calc(50% - 20px);
+    margin-bottom: 0;
+  }
+  .btp {
+    text-align: center;
+    padding-bottom: 5%
+  }
+  .btpname {
+    text-align: left;
+    display: inline;
+    padding-right: 40%;
+  }
+  .bttpmob {
+    visibility: hidden;
+  }
+  .navbarbtm {
+    display: inline;
+    text-align: right;
+    visibility: visible;
+  }
+  .navbarbtm li {
+    display: inline;
+    padding: 5px;
+    margin: 5px;
+    text-align: right;
+  }
 
 
 
@@ -84,13 +172,53 @@ p {
 }
 
 @media only screen and (min-width: 1024px) {
+  .main-nav {
+    display: inline;
+  }
+  .name {
+    display: inline;
+    padding-right: 52%;
+    padding-left: 5%;
+    float: left;
+  }
+  .navbar {
+    display: inline;
+  }
+  .profile {
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .profile p {
+    text-align: left;
+  }
+  .coll {
+    float: left;
+    margin: 20px 0px 20px 0px;
+    width: calc(33% - 20px);
+    margin-bottom: 0;
+  }
+  .colr {
+    float: left;
+    margin: 20px 0px 20px 0px;
+    width: calc(33% - 20px);
+    margin-bottom: 0;
+  }
+  .colo {
+    float: left;
+    margin: 20px 0px 20px 20px;
+    width: calc(33% - 20px);
+    margin-bottom: 0;
+  }
 
-}
 
-.navbar li {
-  display: block;
-  padding: 5px;
-  margin: 2px;
-  background-color: white;
-  text-align: center;
+
+
+
+
+
+
+
+
+
 }
